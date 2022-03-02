@@ -60,7 +60,8 @@ function EditMovieFunc(props) {
         evt.preventDefault();
         // do validation
         let errors = [];
-        if (movie.title === "") {
+
+        if (!('title' in movie) || movie.title === "") {
           errors.push("title");
         }
     

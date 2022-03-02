@@ -96,7 +96,7 @@ export default class GraphQL extends Component {
       headers: myHeaders,
     };
 
-    fetch("http://localhost:4000/v1/graphql", requestOptions)
+    fetch("http://localhost:4000/v1/graphql/list", requestOptions)
       .then((response) => response.json())
       .then((data) => {
         console.log(data);
