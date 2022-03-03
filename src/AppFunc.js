@@ -10,6 +10,8 @@ import OneMovieFunc from "./components/OneMovieFunc";
 import OneGenreFunc from "./components/OneGenreFunc";
 import EditMovieFunc from "./components/EditMovieFunc";
 import LoginFunc from "./components/LoginFunc";
+import OneMovieGraphQL from "./components/OneMovieGraphQL";
+
 
 export default function AppFunc(props) {
     const [jwt, setJWT] = useState("");
@@ -87,6 +89,7 @@ export default function AppFunc(props) {
             <div className="col-md-10">
               <Switch>
                 <Route path="/movies/:id" component={OneMovieFunc} />
+                <Route path="/moviesgraphql/:id" component={OneMovieGraphQL} />
 
                 <Route path="/movies">
                   <MoviesFunc />
